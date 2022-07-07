@@ -7,10 +7,13 @@ void print_most_numbers(void)
 	{
 		if(l_case != 2 && l_case != 4)
 		{
-			putchar(l_case);
+			continue;
+		}
+		else
+		{
+			_putchar(l_case + '0');
 		}
 
 	}
-	putchar('\n');
-	return (0);
+	_putchar('\n');
 }
