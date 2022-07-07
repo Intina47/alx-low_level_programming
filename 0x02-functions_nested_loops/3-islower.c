@@ -12,12 +12,11 @@ int _islower(int c)
 	{
 		if(c == l_case)
 		{
-			return 1;
+			return (1);
 		}
 		else
 		{
-			return 0;
+			return (0);
 		}
 	}
-	return;
 }
