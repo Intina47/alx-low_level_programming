@@ -5,7 +5,7 @@
  *
  * Return: Always 0 (Success)
  */
-int -islower(int c)
+int _islower(int c)
 {
 	char l_case;
 	for(l_case= 'a'; l_case <= 'z'; l_case++)
@@ -18,5 +18,5 @@ int -islower(int c)
 		{
 			return 0;
 		}
-	}
+i	}
 }
