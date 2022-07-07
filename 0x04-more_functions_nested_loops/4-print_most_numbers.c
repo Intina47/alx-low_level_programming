@@ -2,9 +2,15 @@
 
 void print_most_numbers(void)
 {
-	int i;
-	for(i = 0; i <= 9; i++)
-		if(i != 2 && i != 4)
-			_putchar(i);
-	_putchar("\n");
+	int l_case;
+	for(l_case = 0; l_case <= 9; l_case++)
+	{
+		if(l_case != 2 && l_case != 4)
+		{
+			putchar(l_case);
+		}
+
+	}
+	putchar('\n');
+	return (0);
 }
