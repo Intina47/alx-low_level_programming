@@ -1,7 +1,12 @@
-#include <stdio.h>
 #include "main.h"
 int main(void)
 {
-	printf("-putchar\n");
+	char *put = "_putchar";
+	while(*put)
+	{
+		_putchar(*put);
+		put++;
+	}
+	_putchar("\n");
 	return (0);
 }
