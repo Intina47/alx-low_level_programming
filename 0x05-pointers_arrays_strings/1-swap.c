@@ -1,10 +1,9 @@
 #include "main.h"
 
 /**
- * @brief: swap_int - function that takes a pointer and swaps its value with the value of the pointer to the right
- * 
- * @param a: pointer to be processed
- * @param b : pointer to be processed
+ * swap_int - function that takes a pointer and swaps its value
+ * @a: pointer to an integer
+ * @b: pointer to an integer
  */
 void swap_int(int *a, int *b)
 {
