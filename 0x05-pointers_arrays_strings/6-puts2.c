@@ -1,5 +1,9 @@
 #include "main.h"
 
+/**
+ * puts2 - prints a string, followed by a new line,
+ * @str: string to print
+ */
 void puts2(char *str)
 {
     int i;
