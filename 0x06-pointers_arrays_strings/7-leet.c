@@ -7,32 +7,32 @@ char *leet(char *str)
     char *leet_str = str;
     while (str[i] != '\0')
     {
-        if (str[i] == 'a')
+        if (str[i] == 'a' || str[i] == 'A')
         {
             leet_str[i] = '4';
             count++;
         }
-        else if (str[i] == 'e')
+        else if (str[i] == 'e' || str[i] == 'E')
         {
             leet_str[i] = '3';
             count++;
         }
-        else if (str[i] == 'o')
+        else if (str[i] == 'o' || str[i] == 'O')
         {
             leet_str[i] = '0';
             count++;
         }
-        else if (str[i] == 'i')
+        else if (str[i] == 'l' || str[i] == 'L')
         {
             leet_str[i] = '1';
             count++;
         }
-        else if (str[i] == 't')
+        else if (str[i] == 't' || str[i] == 'T')
         {
             leet_str[i] = '7';
             count++;
         }
-        i++;
+        
     }
     if (count == 0)
     {
