@@ -1,39 +1,45 @@
 #include "main.h"
 
-char *leet(char *)
+char *leet(char *str)
 {
-   char *str = "";
-    int i;
-    for (i = 0; str[i] != '\0'; i++)
+   int i = 0;
+   int count = 0;
+    char *leet_str = str;
+    while (str[i] != '\0')
     {
-        if (str[i] == 'a' || str[i] == 'A')
+        if (str[i] == 'a')
         {
-            str[i] = '4';
+            leet_str[i] = '4';
+            count++;
         }
-        else if (str[i] == 'e' || str[i] == 'E')
+        else if (str[i] == 'e')
         {
-            str[i] = '3';
+            leet_str[i] = '3';
+            count++;
         }
-        else if (str[i] == 'g' || str[i] == 'G')
+        else if (str[i] == 'o')
         {
-            str[i] = '6';
+            leet_str[i] = '0';
+            count++;
         }
-        else if (str[i] == 'i' || str[i] == 'I')
+        else if (str[i] == 'i')
         {
-            str[i] = '1';
+            leet_str[i] = '1';
+            count++;
         }
-        else if (str[i] == 'o' || str[i] == 'O')
+        else if (str[i] == 't')
         {
-            str[i] = '0';
+            leet_str[i] = '7';
+            count++;
         }
-        else if (str[i] == 's' || str[i] == 'S')
-        {
-            str[i] = '5';
-        }
-        else if (str[i] == 't' || str[i] == 'T')
-        {
-            str[i] = '7';
-        }
+        i++;
     }
-    return (str);
+    if (count == 0)
+    {
+        return (str);
+    }
+    else
+    {
+        return (leet_str);
+    }
 }
